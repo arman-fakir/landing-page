@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --font-display: "Tiro Bangla", serif;
+  --font-body: "Hind Siliguri", sans-serif;
+
+  --color-forest-50: #EEF3F0;
+  --color-forest-100: #D6E3DB;
+  --color-forest-200: #A9C6B6;
+  --color-forest-300: #7CA991;
+  --color-forest-400: #4F8C6C;
+  --color-forest-500: #2C6349;
+  --color-forest-600: #1B3A2F;
+  --color-forest-700: #152E25;
+  --color-forest-800: #0F221B;
+  --color-forest-900: #091612;
+
+  --color-gold-50: #FBF6E6;
+  --color-gold-100: #F5E9C2;
+  --color-gold-200: #E9CE7C;
+  --color-gold-300: #DDB84E;
+  --color-gold-400: #C9A227;
+  --color-gold-500: #A9861D;
+  --color-gold-600: #8A6C17;
+
+  --color-ivory: #FAF6EE;
+  --color-sage: #E7EFE8;
+  --color-charcoal: #22201C;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-ivory);
+  color: var(--color-charcoal);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.btn-cta {
+  background: var(--color-gold-400);
+  color: var(--color-forest-600);
+  font-weight: 600;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.btn-cta:hover {
+  background: var(--color-gold-300);
+}
+.btn-cta:active {
+  transform: scale(0.97);
+}
+
+.divider-leaf::before {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 2px;
+  background: var(--color-gold-400);
+  margin: 0 auto 1rem;
+}
